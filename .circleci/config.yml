@@ -2,27 +2,12 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-version: 2
+      
+version: 2.1
 jobs:
   build:
-    docker:
-      # specify the version you desire here
+    docker: 
       - image: circleci/openjdk:8-jdk
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
-    test:
-    docker:
-      - image: circleci/openjdk:8-jdk
-      
     steps:
-      - checkout
-
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - build
-      - test
+      - checkout # check out the code in the project directory
+      - run: echo "ci finished" # run the `echo` command
