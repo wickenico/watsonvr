@@ -1,6 +1,6 @@
 # Watson Visual Recognition Application
 
-This java can be used as example for using the visual recognition from IBM Watson. Easily analyze images by class just with changing the url.
+This java program can be used as example for using the visual recognition from IBM Watson. Easily analyze images by class just with changing the url.
 
 [![CircleCI](https://circleci.com/gh/wickenico/watsonvr.svg?style=shield)](https://circleci.com/gh/wickenico/watsonvr)
 
